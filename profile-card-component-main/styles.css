@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Kumbh+Sans:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Young+Serif&display=swap') ;
+
+
+:root{
+    /* ### Primary-clr */
+
+     --primary-clr1: hsl(185, 75%, 39%); 
+    --primary-clr2: hsl(229, 23%, 23%);
+    --primary-clr3: hsl(227, 10%, 46%);
+      
+      /* ### Neutral-clr  */
+      
+      --seacondary-clr: hsl(0, 0%, 59%);
+
+      /* font-family */
+    --ffamily: "Kumbh Sans", sans-serif;
+
+    /* font-weight */
+    --fweight1:400;
+    --fweight2:700;
+}
+
+/*
+   Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+
+/*
+  Add accessible line-height
+ Improve text rendering
+*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+
+/*
+   Avoid text overflows
+*/
+p,
+h1 {
+    overflow-wrap: break-word;
+}
+
+
+body{
+
+
+    background-color: var(--primary-clr1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: auto;
+    inset: 0;
+    font-family: var(--ffamily);
+    overflow: hidden;
+}
+
+.top-bg {
+    position: absolute;
+    right: 60%;
+    bottom: 40%;
+    z-index: -1;
+    overflow: hidden; 
+}
+
+.bottom-bg {
+    position: absolute;
+    left: 60%;
+    top: 40%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.user__profile-card{
+    background-color: white;
+    width: 270px;
+    height: 300px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;  
+}
+
+.card-bg-img img{
+    border-radius: 8px 8px 0 0;
+}
+
+.user-img img{
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.user-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 50px;
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    bottom: 40px;
+}
+
+.user-info h1{
+    font-size: 1rem;
+    color: var(--primary-clr2);
+}
+
+.user-info small {
+    font-size: 0.7rem;
+    color: var(--seacondary-clr);
+    font-weight: var(--fweight1);
+}
+
+.img-caption{
+    position: relative;
+    bottom: 40px;
+    font-size: 0.7rem;
+    font-weight: var(--fweight2);
+    color: var(--seacondary-clr);
+}
+.items{
+    display: flex;
+    gap: 1rem;
+}
+
+hr{
+    border: 1px solid var(--seacondary-clr);
+    width: 100%;
+    position: relative;
+    bottom: 25px;
+}
+
+.items h1{
+    font-size: 0.8rem;
+    font-weight: var(--fweight2);
+}
+
+.followers , .likes , .photes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.items p{
+    font-size: 0.5rem;
+    color: var(--seacondary-clr);
+    font-weight: var(--fweight2);
+    letter-spacing: 0.07rem;
+}
+
+
